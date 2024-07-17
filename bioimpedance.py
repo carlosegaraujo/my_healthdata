@@ -50,5 +50,11 @@ df = pd.concat([df,new_row],ignore_index=True)
 #
 print(df)
 #
+# Generate .csv file:
+#
+file = open('result-bioimpedance.csv', 'w')
+file.write(df.to_csv(index=False,sep ='\t'))
+file.close()
+#
 print("\nEnd of process in: %4.5f seconds ---\n" % (time.time() - start_time))
 #
