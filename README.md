@@ -1,2 +1,2 @@
-# bloodsugar
-Follow My Blood Sugar Data
+# My Helth Data
+Follow My Health Data (Bloodsugar, bioimpedance data)
