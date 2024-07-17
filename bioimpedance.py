@@ -56,5 +56,15 @@ file = open('result-bioimpedance.csv', 'w')
 file.write(df.to_csv(index=False,sep ='\t'))
 file.close()
 #
+# Generate bar plots. Source: https:// ibit.ly/V8h0a / https:// ibit.ly/JVRoi
+#
+barplot=plt.bar(x=df['Data'],height=df['PctGordVisc'],fc='lightgray',ec='black')
+plt.bar_label(barplot,label=df['PctGordVisc'])
+plt.title('PctGordVisc')
+plt.show()
+# Define function
+#
+# Call function
+#
 print("\nEnd of process in: %4.5f seconds ---\n" % (time.time() - start_time))
 #
